@@ -96,6 +96,20 @@
                         </div>
 
                         <div class="form-group row">
+                            <label for="municipality" class="col-md-4 col-form-label text-md-right">{{ __('Municipio') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="municipality" type="text" class="form-control @error('municipality') is-invalid @enderror" name="municipality" value="{{ old('municipality') }}" required autocomplete="municipality" autofocus>
+
+                                @error('municipality')
+                                <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
                             <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('Email') }}</label>
 
                             <div class="col-md-6">
