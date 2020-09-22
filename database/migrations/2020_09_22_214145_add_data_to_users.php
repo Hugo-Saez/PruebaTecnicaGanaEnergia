@@ -14,7 +14,12 @@ class AddDataToUsers extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            //
+            $table->string('surnames');
+            $table->string('address');
+            $table->string('number');
+            $table->string('door');
+            $table->string('postal_code');
+            $table->string('municipality');
         });
     }
 
@@ -26,7 +31,12 @@ class AddDataToUsers extends Migration
     public function down()
     {
         Schema::table('users', function (Blueprint $table) {
-            //
+            $table->dropColumn('surnames');
+            $table->dropColumn('address');
+            $table->dropColumn('number');
+            $table->dropColumn('door');
+            $table->dropColumn('postal_code');
+            $table->dropColumn('municipality');
         });
     }
 }
