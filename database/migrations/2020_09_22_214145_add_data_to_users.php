@@ -18,8 +18,8 @@ class AddDataToUsers extends Migration
             $table->string('address');
             $table->string('number');
             $table->string('door');
-            $table->string('postal_code');
-            $table->string('municipality');
+            $table->integer('postal_code');
+            $table->string('locality');
         });
     }
 
