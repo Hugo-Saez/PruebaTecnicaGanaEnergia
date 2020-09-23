@@ -96,12 +96,12 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="municipality" class="col-md-4 col-form-label text-md-right">{{ __('Municipio') }}</label>
+                            <label for="locality" class="col-md-4 col-form-label text-md-right">{{ __('Localidad') }}</label>
 
                             <div class="col-md-6">
-                                <input id="municipality" type="text" class="form-control @error('municipality') is-invalid @enderror" name="municipality" value="{{ old('municipality') }}" required autocomplete="municipality" autofocus>
+                                <input id="locality" type="text" class="form-control @error('locality') is-invalid @enderror" name="locality" value="{{ old('locality') }}" required autocomplete="locality" autofocus>
 
-                                @error('municipality')
+                                @error('locality')
                                 <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
