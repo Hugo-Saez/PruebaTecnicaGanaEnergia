@@ -1,9 +1,9 @@
 ## Puesta en marcha del proyecto
 
-Crear Base de datos: 
+Crear tablas en Base de datos: 
 php artisan migrate
 
-Arrancar el servidor con: 
+Arrancar el servidor: 
 php artisan serve
 
 Entrar en:
